@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :user do
-      get '/login', to: 'login#index'
+      post '/login', to: 'login#index'
     end
   end
 end
