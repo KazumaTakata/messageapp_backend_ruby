@@ -1,0 +1,33 @@
+
+1
+
+terminal command
+rspec 
+
+error
+`require': cannot load such file -- rspec/core/formatters/progress_formatter (LoadError)
+
+solution 
+
+terminal command 
+
+bundle exec rspec
+
+
+
+2 
+
+
+vscode rspec debugging
+
+solution
+
+terminal command
+
+bundle config --delete bin      
+rails app:update:bin  
+
+bundle binstubs bundler --force 
+
+
+
