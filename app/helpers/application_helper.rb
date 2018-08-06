@@ -11,4 +11,8 @@ module ApplicationHelper
   def jwtdecode(token)
     JWT.decode token, 'secret', true, algorithm: 'HS256'
 end
+
+  def sample_helper
+    puts 'message from sample_helper'
+  end
 end

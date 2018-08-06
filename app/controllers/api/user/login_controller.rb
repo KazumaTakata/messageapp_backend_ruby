@@ -5,6 +5,7 @@ module Api
     class LoginController < ActionController::Base
       protect_from_forgery with: :exception
       include ApplicationHelper
+      before_action :sample_helper
 
       def index
         req_data = JSON.parse(request.body.read)

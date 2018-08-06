@@ -8,5 +8,9 @@ Rails.application.routes.draw do
     namespace :user do
       post '/login', to: 'login#index'
     end
+
+    namespace :friend do
+      get '/friend', to: 'friend#show'
+    end
   end
 end
